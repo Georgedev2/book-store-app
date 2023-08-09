@@ -1,8 +1,14 @@
+import startDB from '@/app/dbConfig/db';
+import User from '@/app/models/BookModel';
 import { NextResponse } from 'next/server';
 import { addBook, Book, books, getBooks } from '../bookList';
 
 export async function GET() {
   const books = getBooks();
+  
+  //await startDB();
+  //const allBooks = await User.find();
+
   try {
     return NextResponse.json(
       { message: 'ok', data: books },
