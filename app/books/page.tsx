@@ -1,4 +1,5 @@
-import { Book } from './bookList';
+
+import { Book } from './bookListData';
 import styles from './books.module.css';
 
 const getNote = async () => {

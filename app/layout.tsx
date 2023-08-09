@@ -1,6 +1,5 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import NavBar from './components/navbar/NavBar';
 
 export const metadata: Metadata = {
   title: 'Book Store App',
@@ -13,10 +12,7 @@ interface Props {
 const RootLayout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <body>
-        <NavBar />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 };

@@ -1,11 +1,11 @@
 import startDB from '@/app/dbConfig/db';
 import User from '@/app/models/BookModel';
 import { NextResponse } from 'next/server';
-import { addBook, Book, books, getBooks } from '../bookList';
+import { addBook, Book, books, getBooks } from '../bookListData';
 
 export async function GET() {
   const books = getBooks();
-  
+
   //await startDB();
   //const allBooks = await User.find();
 
