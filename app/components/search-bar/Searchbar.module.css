@@ -1,0 +1,23 @@
+.searchBar {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: var(--gray-100, #ececf1);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+}
+.searchBar img {
+  width: 15px;
+  height: 15px;
+  margin: 0px 13px;
+  cursor: text;
+}
+.searchBar input {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /*  the background-color: transparent; we apply here, transparent makes the background color of it parent visible */
+  background-color: transparent;
+  width: 100%;
+}

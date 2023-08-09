@@ -1,0 +1,21 @@
+.books {
+  width: 70%;
+  margin: 5px auto 0px auto;
+  --table-cell-space: 10px;
+}
+.books {
+  border-collapse: collapse;
+  border: 1px solid var(--gray-100, #ececf1);
+}
+.th {
+  border: 1px solid var(--gray-100, #ececf1);
+  padding: var(--table-cell-space);
+  text-align: left;
+  font-size: larger;
+  cursor: pointer;
+}
+.td {
+  border: 1px solid var(--gray-100, #ececf1);
+  padding: var(--table-cell-space);
+}
+
